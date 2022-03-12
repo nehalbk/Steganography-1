@@ -1,0 +1,1 @@
+This is a simple project of Steganography, which includes encrypting a message into image and later decrypting using the keys.
