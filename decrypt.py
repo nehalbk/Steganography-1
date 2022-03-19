@@ -16,6 +16,8 @@ m=int(input("Enter first key : "))
 
 n=int(input("Enter second key : "))
 
+msg_len=int(input("Enter second key : "))
+
 #Reading the image
 x=cv2.imread('encrypted_image.png')
 
@@ -25,7 +27,7 @@ x=cv2.resize(x,[m,n])
 #Converting ASCII value to chaareter
 for i in x:
     for j in i:
-        msg.append(chr(int(j[0])))
+        msg.append(chr(int(j[0])-msg_len))
 
 #Converting list to string
 msg=''.join(msg)

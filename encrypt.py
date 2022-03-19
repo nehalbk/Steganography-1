@@ -38,7 +38,7 @@ if  isPrime(msg_len):
     msg.append('`')
 
 #Converting all the charecters into respective ASCII values
-enc_msg=[ord(N) for N in msg]
+enc_msg=[ord(N)+msg_len for N in msg]
 
 #Getting factors
 fact=factors(msg_len)
@@ -50,6 +50,7 @@ m=fact[int(len(fact)/2)]
 n=int(msg_len/m)
 print("First Key :",m)
 print("Second Key : ",n)
+print("Third Key : ",msg_len)
 
 #reshaping the vector to make it look like a 2D image
 arr=np.array(enc_msg).reshape(n,m)
