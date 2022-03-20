@@ -16,7 +16,7 @@ m=int(input("Enter first key : "))
 
 n=int(input("Enter second key : "))
 
-msg_len=int(input("Enter second key : "))
+msg_len=int(input("Enter third key : "))
 
 #Reading the image
 x=cv2.imread('encrypted_image.png')
